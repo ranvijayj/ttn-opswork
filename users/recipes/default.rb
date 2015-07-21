@@ -6,6 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+users = data_bag_item("user")
 search("users","*:*").each do |user_data|
 	user user_data["id"] do
 		comment user_data["comments"]

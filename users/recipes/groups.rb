@@ -6,6 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+groups = data_bag_item("group")
 search("groups","*:*").each do |group_data|
 	group group_data["id"] do
 		gid group_data["gid"]
